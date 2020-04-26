@@ -2,6 +2,6 @@ package chaincode
 
 import "fmt"
 
-func chaincode_main() {
+func Chaincode_main() {
 	fmt.Println("链码中心")
 }

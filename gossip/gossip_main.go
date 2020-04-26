@@ -2,7 +2,7 @@ package gossip
 
 import "fmt"
 
-func gossip_main() {
+func Gossip_main() {
 
 	//
 	fmt.Println("通信管理")

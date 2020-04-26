@@ -2,7 +2,7 @@ package orderer
 
 import "fmt"
 
-func orderer_main() {
+func Orderer_main() {
 
 	//
 	fmt.Println("排序节点")

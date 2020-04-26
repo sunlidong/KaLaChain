@@ -2,7 +2,7 @@ package peer
 
 import "fmt"
 
-func peer_main() {
+func Peer_main() {
 
 	fmt.Println("业务节点")
 }

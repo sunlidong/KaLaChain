@@ -2,7 +2,7 @@ package kyc
 
 import "fmt"
 
-func kyc_main() {
+func Kyc_main() {
 
 	//
 	fmt.Println("访问权限")

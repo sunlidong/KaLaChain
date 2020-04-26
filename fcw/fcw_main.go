@@ -2,7 +2,7 @@ package fcw
 
 import "fmt"
 
-func fcw_main() {
+func Fcw_main() {
 
 	//
 	fmt.Println("预警管理")

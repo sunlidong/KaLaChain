@@ -4,7 +4,7 @@ import "fmt"
 
 // msp 证书管理
 
-func msp_main() {
+func Msp_main() {
 
 	//
 	fmt.Println("证书管理")
