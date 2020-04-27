@@ -16,6 +16,7 @@ import (
 	"KaLaChain/pnf"
 	"KaLaChain/privacy"
 	"KaLaChain/token"
+	"fmt"
 	g "github.com/gin-gonic/gin"
 )
 
@@ -26,8 +27,12 @@ func main() {
 			"message": "pong",
 		})
 	})
-	server()
-	r.Run()
+
+	qie := []int{1, 2, 3, 4, 5}
+	res := search(qie, 4)
+
+	fmt.Println("res=>", res)
+	//r.Run()
 }
 
 //
@@ -48,5 +53,23 @@ func server() {
 	pnf.Pnf_main()
 	privacy.Privacy_main()
 	token.Token_main()
+
+}
+
+//
+
+func search(nums []int, target int) int {
+	msp_map := map[int]int{}
+
+	for k, v := range nums {
+		msp_map[v] = k
+	}
+
+	if msp_map[target] > 0 {
+		return msp_map[target]
+	} else {
+		return int(-1)
+
+	}
 
 }
